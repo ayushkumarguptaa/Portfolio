@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { portfolio } from "../data/portfolioData.jsx";
+import { portfolio } from "../Data/portfolioData";
 
 const Navbar = () => {
   return (

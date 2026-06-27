@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { portfolio } from "../data/portfolioData.jsx";
+import { portfolio } from "../Data/portfolioData";
 
 const Projects = () => {
   return (

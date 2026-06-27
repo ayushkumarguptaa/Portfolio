@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCertificate } from "react-icons/fa";
-import { portfolio } from "../data/portfolioData.jsx";
+import { portfolio } from "../Data/portfolioData";
 
 const Certifications = () => {
   return (
