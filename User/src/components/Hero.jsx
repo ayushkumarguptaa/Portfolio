@@ -5,7 +5,7 @@ import {
   FaDownload,
 } from "react-icons/fa";
 
-import { portfolio } from "../data/portfolioData";
+import { portfolio } from "../data/portfolioData.jsx";
 
 const Hero = () => {
   return (

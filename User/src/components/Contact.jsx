@@ -6,7 +6,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import { portfolio } from "../data/portfolioData";
+import { portfolio } from "../data/portfolioData.jsx";
 
 const Contact = () => {
   return (

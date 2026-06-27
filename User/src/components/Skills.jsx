@@ -1,4 +1,4 @@
-import { portfolio } from "../data/portfolioData";
+import { portfolio } from "../data/portfolioData.jsx";
 import { motion } from "framer-motion";
 
 const levels = {
