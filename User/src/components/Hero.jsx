@@ -45,7 +45,7 @@ const Hero = () => {
               href="#contact"
               className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white px-7 py-3 rounded-xl font-semibold text-center shadow-lg hover:shadow-indigo-500/40 transition duration-300"
             >
-              Hire Me
+              Discuss Opportunity
             </a>
 
             <a
