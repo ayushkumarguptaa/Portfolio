@@ -8,7 +8,6 @@ const Experience = () => {
       className="py-20 sm:py-24 bg-gradient-to-b from-[#111827] via-[#0f172a] to-[#111827]"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -25,7 +24,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Card */}
+        {/* Experience Card */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,8 +33,7 @@ const Experience = () => {
           className="
             bg-slate-800/70
             backdrop-blur-lg
-            border
-            border-slate-700
+            border border-slate-700
             rounded-2xl
             shadow-xl
             hover:border-indigo-500
@@ -43,22 +41,19 @@ const Experience = () => {
             p-6
             md:p-8
 
-            h-[550px]
-            md:h-auto
+            h-[500px]
+            lg:h-[55vh]
           "
         >
-          <div className="h-full flex flex-col">
-
-            {/* Top */}
-            <div className="flex gap-5">
-
-              <div className="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 flex items-center justify-center flex-shrink-0">
+          <div className="flex flex-col h-full min-h-0">
+            {/* Header */}
+            <div className="flex gap-5 flex-shrink-0">
+              <div className="w-14 h-14 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 flex items-center justify-center">
                 <FaBriefcase className="text-white text-xl" />
               </div>
 
               <div className="min-w-0">
-
-                <h3 className="text-2xl font-bold text-white leading-snug">
+                <h3 className="text-2xl font-bold text-white">
                   Full Stack / MERN Stack Developer Intern
                 </h3>
 
@@ -69,83 +64,95 @@ const Experience = () => {
                 <span className="inline-block mt-3 bg-indigo-600 text-white px-4 py-2 rounded-full text-sm">
                   Nov 2025 – Feb 2026
                 </span>
-
               </div>
-
             </div>
 
-            {/* Scroll Area */}
-            <div className="mt-6 flex-1 overflow-y-auto pr-2 hide-scrollbar">
+            {/* Divider */}
+            <div className="my-6 border-t border-slate-700" />
 
-              <ul className="space-y-4 text-slate-300 leading-8 list-disc pl-5">
+            {/* Scrollable Content */}
+            <div
+  className="
+    flex-1
+    min-h-0
+    overflow-y-auto
+    pr-3
 
-                <li>
-                  Developed a complete Learning Management System (LMS) using
-                  the MERN Stack.
-                </li>
+    scrollbar-thin
+    scrollbar-thumb-indigo-500
+    scrollbar-track-slate-800
 
-                <li>
-                  Built responsive user and admin dashboards with React.js and
-                  Tailwind CSS.
-                </li>
+    [&::-webkit-scrollbar]:w-2
+    [&::-webkit-scrollbar-track]:rounded-full
+    [&::-webkit-scrollbar-track]:bg-slate-800
+    [&::-webkit-scrollbar-thumb]:rounded-full
+    [&::-webkit-scrollbar-thumb]:bg-indigo-500
+    hover:[&::-webkit-scrollbar-thumb]:bg-cyan-400
+    [&::-webkit-scrollbar-thumb]:transition-colors
+    [&::-webkit-scrollbar-thumb]:duration-300
+  "
+>
+  <ul className="space-y-4 text-slate-300 leading-8 list-disc pl-5">
+    <li>
+      Developed a complete Learning Management System (LMS) using the MERN
+      Stack.
+    </li>
 
-                <li>
-                  Developed secure REST APIs using Node.js and Express.js with
-                  JWT authentication.
-                </li>
+    <li>
+      Built responsive user and admin dashboards with React.js and Tailwind
+      CSS.
+    </li>
 
-                <li>
-                  Integrated PostgreSQL database for managing users,
-                  courses, enrollments, lectures and quizzes.
-                </li>
+    <li>
+      Developed secure REST APIs using Node.js and Express.js with JWT
+      authentication.
+    </li>
 
-                <li>
-                  Implemented Razorpay payment gateway for secure online
-                  course enrollment.
-                </li>
+    <li>
+      Integrated PostgreSQL database for managing users, courses,
+      enrollments, lectures and quizzes.
+    </li>
 
-                <li>
-                  Integrated Cloudinary for image and video uploads.
-                </li>
+    <li>
+      Implemented Razorpay payment gateway for secure online course
+      enrollment.
+    </li>
 
-                <li>
-                  Integrated Nodemailer for automated email notifications.
-                </li>
+    <li>
+      Integrated Cloudinary for image and video uploads.
+    </li>
 
-                <li>
-                  Designed RESTful APIs for course management.
-                </li>
+    <li>
+      Integrated Nodemailer for automated email notifications.
+    </li>
 
-                <li>
-                  Implemented secure authentication using JWT and bcrypt.
-                </li>
+    <li>
+      Designed RESTful APIs for course management.
+    </li>
 
-                <li>
-                  Built reusable React components and responsive layouts.
-                </li>
+    <li>
+      Implemented secure authentication using JWT and bcrypt.
+    </li>
 
-                <li>
-                  Optimized database queries for better application
-                  performance.
-                </li>
+    <li>
+      Built reusable React components and responsive layouts.
+    </li>
 
-                <li>
-                  Collaborated with the development team using Git and GitHub.
-                </li>
+    <li>
+      Optimized database queries for better application performance.
+    </li>
 
-                <li>
-                  Delivered scalable, secure and user-friendly web
-                  applications.
-                </li>
+    <li>
+      Collaborated with the development team using Git and GitHub.
+    </li>
 
-              </ul>
-
-            </div>
-
+    <li>
+      Delivered scalable, secure and user-friendly web applications.
+    </li>
+  </ul>
+</div>
           </div>
-
         </motion.div>
-
       </div>
     </section>
   );
