@@ -9,7 +9,6 @@ const Projects = () => {
       className="py-24 bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0f172a]"
     >
       <div className="max-w-7xl mx-auto px-6">
-
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -28,7 +27,6 @@ const Projects = () => {
 
         {/* Projects */}
         <div className="flex flex-wrap justify-center gap-8">
-
           {portfolio.projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -42,9 +40,8 @@ const Projects = () => {
                 y: -8,
                 scale: 1.02,
               }}
-              className="w-full sm:w-[340px] bg-slate-800/70 backdrop-blur-lg border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:border-indigo-500 hover:shadow-indigo-500/30 transition-all duration-300"
+              className="w-full sm:w-[400px] bg-slate-800/70 backdrop-blur-lg border border-slate-700 rounded-2xl overflow-hidden shadow-xl hover:border-indigo-500 hover:shadow-indigo-500/30 transition-all duration-300"
             >
-
               {/* Banner */}
               {project.image ? (
                 <img
@@ -62,7 +59,6 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-5">
-
                 {/* Tech Stack */}
                 <span className="inline-block bg-indigo-600 text-white text-xs px-3 py-1 rounded-full mb-3">
                   {project.tech}
@@ -80,7 +76,6 @@ const Projects = () => {
 
                 {/* Buttons */}
                 <div className="flex gap-3 mt-5">
-
                   <a
                     href={project.github}
                     target="_blank"
@@ -100,16 +95,11 @@ const Projects = () => {
                     <FaExternalLinkAlt />
                     Live Demo
                   </a>
-
                 </div>
-
               </div>
-
             </motion.div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

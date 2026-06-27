@@ -30,7 +30,7 @@ export const portfolio = {
   projects: [
     {
       title: "TaskFlow - AI Powered Task Management System",
-      tech: "React • Node • Express • MongoDB • Tailwind",
+      tech: "React • Node • Express • MongoDB • GROQ AI • Tailwind",
 
       description:
         "AI-powered task management platform with authentication, Kanban boards, CRUD operations, drag & drop support and responsive dashboard.",
@@ -44,7 +44,7 @@ export const portfolio = {
     {
       title: "E-Learning Platform",
 
-      tech: "React • Node • PostgreSQL • Razorpay",
+      tech: "React • Node • Express • PostgreSQL • Razorpay",
 
       description:
         "Complete learning management platform with courses, lectures, enrollments, payments and admin dashboard.",
