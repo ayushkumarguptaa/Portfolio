@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 
 import { portfolio } from "../Data/portfolioData";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -30,9 +31,24 @@ const Hero = () => {
             {portfolio.name}
           </h1>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl text-indigo-300 mt-5 font-semibold">
-            {portfolio.role}
-          </h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-indigo-300 mt-5 font-semibold h-10">
+  <TypeAnimation
+    sequence={[
+      "Full Stack Developer",
+      1000,
+      "MERN Stack Developer",
+      1000,
+      "Frontend Developer",
+      1000,
+      "Backend Developer",
+      1000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+    cursor={true}
+  />
+</h2>
 
           <p className="text-slate-300 mt-6 text-base sm:text-lg leading-7 sm:leading-8 max-w-xl mx-auto md:mx-0">
             {portfolio.description}
