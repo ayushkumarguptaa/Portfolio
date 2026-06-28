@@ -3,50 +3,52 @@ import { portfolio } from "../Data/portfolioData";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 py-10">
+    <footer className="relative bg-gradient-to-b from-[#111827] to-[#020617] border-t border-slate-800 overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-72 bg-cyan-500/10 blur-[120px] rounded-full" />
+      </div>
 
-      <div className="max-w-7xl mx-auto px-8 text-center">
-
-        <h2 className="text-3xl font-bold text-cyan-400">
-          {portfolio.name}
+      <div className="relative max-w-7xl mx-auto px-8 py-12 text-center">
+        {/* Name */}
+        <h2 className="text-4xl font-bold text-white">
+          <span className="text-cyan-400">{portfolio.name}</span>
         </h2>
 
-        <p className="text-gray-400 mt-3">
+        {/* Role */}
+        <p className="text-slate-400 mt-3 text-lg">
           Full Stack MERN Developer
         </p>
 
-        <div className="flex justify-center gap-6 mt-6">
+        {/* Social Icons */}
+        <div className="flex justify-center gap-8 mt-8">
+  <a
+    href={portfolio.github}
+    target="_blank"
+    rel="noreferrer"
+    className="text-white transition-all duration-300 hover:text-sky-400 hover:scale-110"
+  >
+    <FaGithub size={42} />
+  </a>
 
-          <a
-            href={portfolio.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub
-              size={30}
-              className="hover:text-cyan-400"
-            />
-          </a>
+  <a
+    href={portfolio.linkedin}
+    target="_blank"
+    rel="noreferrer"
+    className="text-white transition-all duration-300 hover:text-sky-400 hover:scale-110"
+  >
+    <FaLinkedin size={42} />
+  </a>
+</div>
 
-          <a
-            href={portfolio.linkedin}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin
-              size={30}
-              className="hover:text-cyan-400"
-            />
-          </a>
+        {/* Divider */}
+        <div className="w-32 h-px bg-slate-700 mx-auto my-8"></div>
 
-        </div>
-
-        <p className="mt-8 text-gray-500">
-          © {new Date().getFullYear()} Ayush Kumar Gupta. All Rights Reserved.
+        {/* Copyright */}
+        <p className="text-slate-500 text-sm">
+          © {new Date().getFullYear()} {portfolio.name}. All Rights Reserved.
         </p>
-
       </div>
-
     </footer>
   );
 };

@@ -1,3 +1,6 @@
+import ELearningImage from "../assets/E_LEARNING.png";
+import TaskFlow from "../assets/TaskFlow.png";
+
 export const portfolio = {
   name: "Ayush Kumar Gupta",
   role: "Full Stack MERN Developer",
@@ -34,7 +37,7 @@ export const portfolio = {
 
       description:
         "AI-powered task management platform with authentication, Kanban boards, CRUD operations, drag & drop support and responsive dashboard.",
-
+      image:TaskFlow,
       github: "https://www.github.com/ayushkumarguptaa/TaskFlow1",
 
       live: "https://task-flow-liart-delta.vercel.app/",
@@ -42,16 +45,17 @@ export const portfolio = {
 
 
     {
-      title: "E-Learning Platform",
+      title: "E-Learning Management System",
 
       tech: "React • Node • Express • PostgreSQL • Razorpay",
 
       description:
         "Complete learning management platform with courses, lectures, enrollments, payments and admin dashboard.",
+      image:ELearningImage,
 
       github: "https://www.github.com/ayushkumarguptaa/DMV-E-LEARNING",
 
-      live: "https://dmv-learning.netlify.com",
+      live: "https://dmv-learning.netlify.app",
     },
   ],
 

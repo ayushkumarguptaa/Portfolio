@@ -75,15 +75,15 @@ const Skills = () => {
         </motion.div>
 
         {/* Skills Slider */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden py-4">
           {/* Left Fade */}
-          <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 to-transparent z-20 pointer-events-none" />
+          <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/70 to-transparent z-20 pointer-events-none" />
 
           {/* Right Fade */}
-          <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#111827] via-[#111827]/90 to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-[#111827] via-[#111827]/70 to-transparent z-20 pointer-events-none" />
 
           <motion.div
-            className="flex gap-6 w-max items-center"
+            className="flex gap-6 w-max items-center px-8"
             animate={{
               x: ["0%", "-50%"],
             }}
@@ -107,11 +107,11 @@ const Skills = () => {
                 }}
                 whileHover={{
                   scale: 1.1,
+                  y: -8,
                 }}
-                //circular container
-                className="min-w-[120px] h-[120px] rounded-full bg-slate-800/70 backdrop-blur-xl border border-slate-700 flex flex-col items-center justify-center shadow-lg hover:border-indigo-500 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] cursor-pointer transition-all"
+                className="min-w-[120px] h-[120px] rounded-full bg-slate-800/70 backdrop-blur-xl border border-slate-700 flex flex-col items-center justify-center shadow-lg hover:border-indigo-500 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300 cursor-pointer"
               >
-                <div className="mb-1 flex items-center justify-center">
+                <div className="mb-2 flex items-center justify-center">
                   {icons[skill]}
                 </div>
 
