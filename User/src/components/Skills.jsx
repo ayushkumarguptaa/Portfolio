@@ -12,6 +12,7 @@ import {
   FaDatabase,
   FaMicrosoft,
   FaCode,
+  FaProjectDiagram, FaCogs 
 } from "react-icons/fa";
 
 const icons = {
@@ -33,6 +34,10 @@ const icons = {
   MongoDB: <FaDatabase className="text-green-500 text-xl" />,
 
   PostgreSQL: <FaDatabase className="text-sky-500 text-xl" />,
+
+  "Apache Spark": <FaCogs className="text-sky-500 text-xl" />,
+
+  "ETL Pipelines": <FaProjectDiagram className="text-sky-500 text-xl" />,
 
   "Git/GitHub": (
     <div className="flex gap-1 text-lg">

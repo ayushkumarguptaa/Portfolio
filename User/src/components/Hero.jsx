@@ -7,7 +7,14 @@ import {
 
 import { portfolio } from "../Data/portfolioData";
 import { TypeAnimation } from "react-type-animation";
+import Cat from "../../src/assets/Cat.gif"
 
+// import Lottie from "lottie-react";
+// import Catplaying from "../assets/lottie/cat.json";
+// console.log("LottieModule:", LottieModule);
+// console.log("Lottie:", Lottie);
+// console.log("typeof Lottie:", typeof Lottie);
+// console.log("Catplaying:", Catplaying);
 const Hero = () => {
   return (
     <section
@@ -41,6 +48,8 @@ const Hero = () => {
       "Frontend Developer",
       1000,
       "Backend Developer",
+      1000,
+      "Data Engineer",
       1000,
     ]}
     wrapper="span"
@@ -101,13 +110,18 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Side */}
+        {/* <Lottie
+        animationData={Catplaying}
+        loop={true}
+      /> */}
         <motion.div
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
           className="flex justify-center w-full"
         >
-
+          <div className="grid">
+            <img src={Cat}></img>
           <div className="relative w-full max-w-[430px]">
 
             {/* Glow */}
@@ -153,7 +167,7 @@ const Hero = () => {
                 <p className="ml-4 sm:ml-6 text-orange-400">
                   skills:
                   <span className="text-cyan-300">
-                    {" "}["React", "Node.js", "Express", "MongoDB"],
+                    {" "}["React", "Node.js", "Express", "MongoDB", "PostgreSQL", "Python", "Apache Spark", "ETL Pipelines"],
                   </span>
                 </p>
 
@@ -174,7 +188,7 @@ const Hero = () => {
                 <p className="ml-4 sm:ml-6 text-orange-400">
                   status:
                   <span className="text-emerald-400">
-                    {" "} "Available for Work"
+                    {" "} "Open To Work"
                   </span>
                 </p>
 
@@ -184,6 +198,7 @@ const Hero = () => {
 
             </div>
 
+          </div>
           </div>
 
         </motion.div>

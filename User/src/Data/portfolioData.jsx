@@ -28,6 +28,8 @@ export const portfolio = {
     "Git/GitHub",
     "Azure",
     "CI/CD",
+    "Apache Spark",
+    "ETL Pipelines"
   ],
 
   projects: [
