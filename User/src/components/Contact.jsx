@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 
 import { portfolio } from "../Data/portfolioData";
+import ContactMe from "../../src/assets/Contact.gif"
 
 const Contact = () => {
   return (
@@ -17,14 +18,22 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl sm:text-5xl font-bold text-center text-white mb-12 sm:mb-14"
-        >
-          Contact <span className="text-indigo-400">Me</span>
-        </motion.h2>
+        <div className="flex items-center justify-center gap-4 mb-12 sm:mb-14">
+  <motion.h2
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.6 }}
+    className="text-4xl sm:text-5xl font-bold text-white"
+  >
+    Contact <span className="text-indigo-400">Me</span>
+  </motion.h2>
+
+  <img
+    src={ContactMe}
+    alt="Contact"
+    className="w-16 h-16 object-contain"
+  />
+</div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
@@ -44,9 +53,9 @@ const Contact = () => {
 
               <div className="min-w-0">
                 <p className="text-slate-400 text-sm">Phone</p>
-                <p className="text-white font-medium break-all">
+                <a href={`tel:${portfolio.phonel}`} className="text-white font-medium break-all hover:text-indigo-400 transition">
                   {portfolio.phone}
-                </p>
+                </a>
               </div>
             </div>
 
